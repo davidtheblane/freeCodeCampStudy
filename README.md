@@ -2,4 +2,4 @@
 
 Free Code Camp Study Repository
 
-Todos os desafios serão criados e resolvidos aqui até obter o certificado, aos poucos vou atualizando.
+Todos os desafios serão criados e resolvidos aqui até a adquirir o certificado de Responsive Web Design, aos poucos vou atualizando.
