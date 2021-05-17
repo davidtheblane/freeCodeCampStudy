@@ -1,0 +1,28 @@
+main {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: mediumpurple;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  line-height: 0.6rem;
+  align-items: center;
+}
+
+#survey-form {
+  display: flex;
+  flex-direction: column;
+  background: darkslateblue;
+  padding: 2rem 2rem;
+  border-radius: 6px;
+}
+
+label {
+  font-weight: bold;
+  line-height: 1.8rem;
+}
