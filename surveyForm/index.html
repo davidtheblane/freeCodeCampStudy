@@ -1,182 +1,117 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
 
-    <title>Survey Form</title>
-  </head>
-  <body>
-    <main id="mainDiv" class="bgImage">
-      
-      <section id='header'>        
-          <h1 id="title">freeCodeCamp Survey Form</h1>
-          <p id="description">
-            Thank you for taking the time to help us improve the platform
-          </p>
-        </div>
-      </section>
-      <form action="#" id="survey-form">
-        <label for="name" id="name-label">Name</label>
-        <input type="text" placeholder="Your name" id="name" required />
-        <label for="email" id="email-label">Email</label>
-        <input type="email" placeholder="Your best Email" id="email" required />
-        <label for="number" id="number-label">Age</label>
-        <input
-          type="number"
-          min="10"
-          max="99"
-          placeholder="Your Age"
-          id="number"
-        />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 
-        <label for="role" id="dropdownRole"
-          >Which option best describes your current role?</label
-        >
-        <select name="role" id="dropdownRole">
-          <option value="student">Student</option>
-          <option value="fullJob">Full Time Job</option>
-          <option value="fullLearner">Full Time Learner</option>
-          <option value="notToSay">Prefer not to say</option>
-          <option value="other">Other</option>
-        </select>
+  <title>Survey Form</title>
+</head>
 
-        <div class="recommend__box">
+<body>
+  <main id="mainDiv" class="bgImage">
+
+    <section id='header'>
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve the platform
+      </p>
+      </div>
+    </section>
+    <form action="#" id="survey-form">
+      <label for="name" id="name-label">Name</label>
+      <input type="text" placeholder="Your name" id="name" required />
+      <label for="email" id="email-label">Email</label>
+      <input type="email" placeholder="Your best Email" id="email" required />
+      <label for="number" id="number-label">Age</label>
+      <input type="number" min="10" max="99" placeholder="Your Age" id="number" />
+
+      <label for="role" id="dropdown">Which option best describes your current role?</label>
+      <select name="role" id="dropdown">
+        <option value="student">Student</option>
+        <option value="fullJob">Full Time Job</option>
+        <option value="fullLearner">Full Time Learner</option>
+        <option value="notToSay">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+
+      <div id="recommend">
         <label> Would you recommend freeCodeCamp to a friend?</label>
-        <label for="recommend">
-          <input
-            type="radio"
-            name="recommendation"
-            value="1"
-          />Definitely</label
-        >
-        <label for="recommend"
-          ><input type="radio" name="recommendation" value="2" />Maybe</label
-        >
-        <label for="recommend"
-          ><input type="radio" name="recommendation" value="3" />Not Sure</label
-        >
+
+        <label class='recommend__item' for="recommend">
+          <input type="radio" name="recommendation" value="1" />Definitely</label>
+
+        <label class='recommend__item' for="recommend">
+          <input type="radio" name="recommendation" value="2" />Maybe</label>
+
+        <label class='recommend__item' for="recommend">
+          <input class='recommend__item' type="radio" name="recommendation" value="3" />Not Sure</label>
       </div>
 
-        <label for="feature" id="dropdown2">
-          What is your favorite feature of freeCodeCamp?
-        </label>
-        <select name="feature" id="dropdownFeature">
-          <option value="challenge">Challenges</option>
-          <option value="projects">Projects</option>
-          <option value="community">Community</option>
-          <option value="openSource">Open Source</option>
-        </select>
+      <label for="feature" id="dropdown2">
+        What is your favorite feature of freeCodeCamp?
+      </label>
+      <select name="feature" id="dropdownFeature">
+        <option value="challenge">Challenges</option>
+        <option value="projects">Projects</option>
+        <option value="community">Community</option>
+        <option value="openSource">Open Source</option>
+      </select>
 
+      <div id="improved">
         <label>What would you like to see improved? (Check all that apply)</label>
-        <label for="improve">
-          
-          <input
-            id="improve"
-            type="checkbox"
-            value="front"
-            name="improve"
-          />Front-end Projects</label
-        >
-        <label for="improve"
-          ><input
-            id="improve"
-            type="checkbox"
-            value="back"
-            name="improve"
-          />Back-end Projects</label
-        >
-        <label for="improve"
-          ><input
-            id="improve"
-            type="checkbox"
-            value="data"
-            name="improve"
-          />Data Visualization</label
-        >
-        <label for="improve"
-          ><input
-            id="improve"
-            type="checkbox"
-            value="chall"
-            name="improve"
-          />Challenges
-        </label>
-        <label for="improve"
-          ><input
-            id="improve"
-            type="checkbox"
-            value="open"
-            name="improve"
-          />Open Source Community
-        </label>
-        <label for="improve"
-          ><input
-            id="improve"
-            type="checkbox"
-            value="gitter"
-            name="improve"
-          />Gitter help rooms
-        </label>
-        <label for="improve"
-          ><input
-            id="improve"
-            type="checkbox"
-            value="videos"
-            name="improve"
-          />Videos
-        </label>
-        <label for="improve"
-          ><input
-            id="improve"
-            type="checkbox"
-            value="city"
-            name="improve"
-          />City Meetups
-        </label>
-        <label for="improve"
-          ><input
-            id="improve"
-            type="checkbox"
-            value="wiki"
-            name="improve"
-          />Wiki
-        </label>
-        <label for="improve"
-          ><input
-            id="improve"
-            type="checkbox"
-            value="forum"
-            name="improve"
-          />Forum
-        </label>
-        <label for="improve"
-          ><input
-            id="improve"
-            type="checkbox"
-            value="courses"
-            name="improve"
-          />Additional Courses
-        </label>
 
-        <label for="comments">Any comments or suggestions?</label>
-        <textarea
-          name="comments"
-          id="comments"
-          cols="50"
-          rows="5"
-          placeholder="Enter your comment here"
-        ></textarea>
+        <label for="improve" class='improved__item'>
+          <input id="improve" type="checkbox" value="front" name="improve" />Front-end Projects</label>
 
-        <button type="submit" id="submit">Submit</button>
-      </form>
-    </main>
+        <label for="improve" class='improved__item'><input id="improve" type="checkbox" value="back"
+            name="improve" />Back-end Projects</label>
 
-    <!-- CDN TEST -->
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-  </body>
+        <label for="improve" class='improved__item'><input id="improve" type="checkbox" value="data"
+            name="improve" />Data Visualization</label>
+
+        <label for="improve" class='improved__item'><input id="improve" type="checkbox" value="chall"
+            name="improve" />Challenges
+        </label>
+        <label for="improve" class='improved__item'><input id="improve" type="checkbox" value="open"
+            name="improve" />Open Source Community
+        </label>
+        <label for="improve" class='improved__item'><input id="improve" type="checkbox" value="gitter"
+            name="improve" />Gitter help rooms
+        </label>
+        <label for="improve" class='improved__item'><input id="improve" type="checkbox" value="videos"
+            name="improve" />Videos
+        </label>
+        <label for="improve" class='improved__item'><input id="improve" type="checkbox" value="city"
+            name="improve" />City Meetups
+        </label>
+        <label for="improve" class='improved__item'><input id="improve" type="checkbox" value="wiki"
+            name="improve" />Wiki
+        </label>
+        <label for="improve" class='improved__item'><input id="improve" type="checkbox" value="forum"
+            name="improve" />Forum
+        </label>
+        <label for="improve" class='improved__item'><input id="improve" type="checkbox" value="courses"
+            name="improve" />Additional Courses
+        </label>
+      </div>
+
+      <label for="comments">Any comments or suggestions?</label>
+      <textarea name="comments" cols="50" rows="5" placeholder="Enter your comment here"></textarea>
+
+      <button href='#' type="submit" id="submit">Submit</button>
+    </form>
+  </main>
+
+  <!-- CDN TEST -->
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
+
 </html>
